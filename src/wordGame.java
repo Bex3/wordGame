@@ -17,36 +17,48 @@ public class wordGame {
 
         if (userInput.equalsIgnoreCase("colors")) {
             System.out.println("Round 2: Spongebob, Tom & Jerry, and Courage The Cowardly Dog");
-            //cartoons
             userInput = inputScanner.nextLine();
 
             if (userInput.equalsIgnoreCase("cartoons")){
-                System.out.println("Round 2: Spongebob, Tom & Jerry, and Courage The Cowardly Dog");
-                //cartoons
+                System.out.println("Round 3: one, two, and three");
                 userInput = inputScanner.nextLine();
 
-                if (userInput.equalsIgnoreCase("cartoons")){
-                    System.out.println("Round 3: Flush, Straight, and Full House" + "This answer is two words");
-                    //poker hands
+                if (userInput.equalsIgnoreCase("numbers")){
+                    System.out.println("Round 4: Flush, Straight, and Full House" + "\nThis answer is two words");
                     userInput = inputScanner.nextLine();
 
                     if (userInput.equalsIgnoreCase("poker hands") || userInput.equalsIgnoreCase("poker hands")) {
-                        System.out.println("Round 4: Larch, Linden, and Orange");
-                        //trees
+                        System.out.println("Congratulations! You made it to the 5th Round! ");
+                        System.out.println("Round 5: Larch, Linden, and Orange");
                         userInput = inputScanner.nextLine();
 
                         if (userInput.equalsIgnoreCase("trees")){
-                            System.out.println("Congratulations! You made it to the 5th Round! ");
-                            System.out.println("Round 5: Java, Ruby, and C3" + "This answer is two words");
-                            //programming languages
+                            System.out.println("Round 6: Java, Ruby, and C3" + "\nThis answer is two words");
                             userInput = inputScanner.nextLine();
 
                             if(userInput.equalsIgnoreCase("programming languages")){
-                                System.out.println("Round 6: Winchester, Remington, and Colt" + "This answer is two words");
-                                //gun brands
+                                System.out.println("Round 7: Winchester, Remington, and Colt" + "\nThis answer is two words");
                                 userInput = inputScanner.nextLine();
 
-                                if (userInput.equalsIgnoreCase())
+                                if (userInput.equalsIgnoreCase("gun brands")){
+                                    System.out.println("Round 8: Blanche, Rose, Dorothy, and Sophia" + "\nThis answer is two words");
+                                    userInput = inputScanner.nextLine();
+
+                                    if (userInput.equalsIgnoreCase("golden girls")){
+                                        System.out.println("Round 9: Hops, Yeast, Water and Grain");
+                                        userInput = inputScanner.nextLine();
+
+                                        if(userInput.equalsIgnoreCase("beer")){
+                                            System.out.println("You made it to Round 10! ");
+                                            System.out.println("Round 10: Bronco, Mustang, and Brumby" + "\n There are two options for this round");
+                                            userInput = inputScanner.nextLine();
+
+                                            if (userInput.equalsIgnoreCase("horses") || (userInput.equalsIgnoreCase("cars"))){
+
+                                            }
+                                        }
+                                    }
+                                }
                             }
 
                         }
