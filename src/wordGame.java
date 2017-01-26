@@ -8,10 +8,10 @@ import java.util.Scanner;
 public class wordGame {
 
     public static void main(String[] args) {
-        System.out.println("Guess the common word among the words given");
+        System.out.println("Welcome to the Guess the Common Denominator" + "\n" + "\n For example Water, Juice, and Coffee  \n The answer would be drinks");
         Scanner inputScanner = new Scanner(System.in);
 
-        System.out.println("Round 1: red, green, and yellow");
+        System.out.println("\n" + "Round 1: red, green, and yellow");
         //colors
         String userInput = inputScanner.nextLine();
 
