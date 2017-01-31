@@ -13,63 +13,113 @@ public class wordGame {
         Scanner inputScanner = new Scanner(System.in);
 
         while (true){
-            System.out.println("\n" + "Round 1: red, green, and yellow");
+            System.out.println("\n" + "Round 1: Red, Green, and Yellow");
             //colors
             String userInput = inputScanner.nextLine();
 
             if (userInput.equalsIgnoreCase("colors")) {
-                System.out.println("Round 2: Spongebob, Tom & Jerry, and Courage The Cowardly Dog");
+                System.out.println("\nRound 2: Spongebob, Tom & Jerry, and Courage The Cowardly Dog");
                 userInput = inputScanner.nextLine();
 
                 if (userInput.equalsIgnoreCase("cartoons")){
-                    System.out.println("Round 3: one, two, and three");
+                    System.out.println("\nRound 3: One, Two, and Three");
                     userInput = inputScanner.nextLine();
 
                     if (userInput.equalsIgnoreCase("numbers")){
-                        System.out.println("Round 4: Flush, Straight, and Full House" + "\nThis answer is two words");
+                        System.out.println("\nRound 4: Flush, Straight, and Full House" + "\nThis answer is two words");
                         userInput = inputScanner.nextLine();
 
-                        if (userInput.equalsIgnoreCase("poker hands") || userInput.equalsIgnoreCase("poker hands")) {
-                            System.out.println("Congratulations! You made it to the 5th Round! ");
-                            System.out.println("Round 5: Larch, Linden, and Orange");
+                        if (userInput.equalsIgnoreCase("poker hands") || (userInput.equalsIgnoreCase("poker hands"))) {
+                            System.out.println("\nCongratulations! You made it to the 5th Round! ");
+                            System.out.println("\n\nRound 5: Larch, Linden, and Orange");
                             userInput = inputScanner.nextLine();
 
                             if (userInput.equalsIgnoreCase("trees")){
-                                System.out.println("Round 6: Java, Ruby, and C3" + "\nThis answer is two words");
+                                System.out.println("\nRound 6: Java, Ruby, and C" + "\nThis answer is two words");
                                 userInput = inputScanner.nextLine();
 
                                 if(userInput.equalsIgnoreCase("programming languages")){
-                                    System.out.println("Round 7: Winchester, Remington, and Colt" + "\nThis answer is two words");
+                                    System.out.println("\nRound 7: Winchester, Remington, and Colt" + "\nThis answer is two words");
                                     userInput = inputScanner.nextLine();
 
-                                    if (userInput.equalsIgnoreCase("gun brands")){
-                                        System.out.println("Round 8: Blanche, Rose, Dorothy, and Sophia" + "\nThis answer is two words");
+                                    if (userInput.equalsIgnoreCase("gun brands") || userInput.equalsIgnoreCase("gun manufacturers")){
+                                        System.out.println("\nRound 8: Blanche, Rose, Dorothy, and Sophia" + "\nThis answer is two or three words");
                                         userInput = inputScanner.nextLine();
 
-                                        if (userInput.equalsIgnoreCase("golden girls")){
-                                            System.out.println("Round 9: Hops, Yeast, Water and Grain");
+                                        if (userInput.equalsIgnoreCase("golden girls")|| userInput.equalsIgnoreCase("the golden girls")){
+                                            System.out.println("\nRound 9: Hops, Yeast, Water and Grain");
                                             userInput = inputScanner.nextLine();
 
                                             if(userInput.equalsIgnoreCase("beer")){
-                                                System.out.println("You made it to Round 10! ");
-                                                System.out.println("Round 10: Bronco, Mustang, and Brumby" + "\n There are two options for this round");
+                                                System.out.println("\nYou made it to Round 10! ");
+                                                System.out.println("\nRound 10: Bronco, Mustang, and Brumby" + "\nThere are two options for this round");
                                                 userInput = inputScanner.nextLine();
 
-                                                if (userInput.equalsIgnoreCase("horses") || (userInput.equalsIgnoreCase("cars"))){
+                                                if (userInput.equalsIgnoreCase("horses") || userInput.equalsIgnoreCase("cars")){
+                                                    System.out.println("\nCongratulations! You won the game!");
+                                                    break;
 
+                                                } else if (userInput.equalsIgnoreCase("0")) {
+                                                    System.out.println("Thank you for playing");
+                                                    break;
+                                                } else if (!userInput.equalsIgnoreCase("horses") || !userInput.equalsIgnoreCase("cars")){
+                                                    System.out.println("Round 10 Hint: Modes of transportation");
                                                 }
+
+                                            } else if (userInput.equalsIgnoreCase("0")) {
+                                                System.out.println("Thank you for playing");
+                                                break;
+                                            } else if (!userInput.equalsIgnoreCase("beer")){
+                                                System.out.println("Round 9 Hint: Relax with one of these");
                                             }
+
+                                        } else if (userInput.equalsIgnoreCase("0")) {
+                                            System.out.println("Thank you for playing");
+                                            break;
+                                        } else if (!userInput.equalsIgnoreCase("golden girls") || !userInput.equalsIgnoreCase("the golden girls")){
+                                            System.out.println("Round 8 Hint: A golden TV show");
                                         }
+
+                                    }else if (userInput.equalsIgnoreCase("0")) {
+                                        System.out.println("Thank you for playing");
+                                        break;
+                                    } else if (!userInput.equalsIgnoreCase("gun brands")){
+                                        System.out.println("Round 7 Hint: bang bang");
                                     }
+
+                                } else if (userInput.equalsIgnoreCase("0")) {
+                                    System.out.println("Thank you for playing");
+                                    break;
+                                } else if (!userInput.equalsIgnoreCase("programming languages")){
+                                    System.out.println("Round 6 Hint: This game uses one of these to run");
                                 }
 
+                            } else if (userInput.equalsIgnoreCase("0")) {
+                                System.out.println("Thank you for playing");
+                                break;
+                            } else if (!userInput.equalsIgnoreCase("trees")){
+                                System.out.println("Round 5 Hint: You can climb these");
                             }
+
+                        } else if (userInput.equalsIgnoreCase("0")){
+                            System.out.println("Thank you for playing");
+                            break;
+                        } else if(!userInput.equalsIgnoreCase("")){
+                            System.out.println("Round 4 Hint: Think Gambling & Vegas");
                         }
+
+                    } else if (userInput.equalsIgnoreCase("0")){
+                        System.out.println("Thank you for playing");
+                        break;
+                    } else if (!userInput.equalsIgnoreCase("numbers")){
+                        System.out.println("Round 3 Hint: You count with these");
                     }
 
-
-                } else {
-                    System.out.println();
+                } else if (userInput.equalsIgnoreCase("0")){
+                    System.out.println("Thank you for playing");
+                    break;
+                } else if (!userInput.equalsIgnoreCase("cartoons")){
+                    System.out.println("Round 2 Hint: Saturday morning ________");
                 }
 
 
@@ -77,6 +127,8 @@ public class wordGame {
                 System.out.println("Thank you for playing");
                 break;
 
+            } else if (!userInput.equalsIgnoreCase("colors")){
+                System.out.println("Round 1 Hint: you use these to paint or draw with");
             }
 
         }
