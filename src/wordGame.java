@@ -12,7 +12,9 @@ public class wordGame {
         System.out.println("If you would like to exit at any time press 0");
         Scanner inputScanner = new Scanner(System.in);
 
-        while (true){
+        boolean mainGame = true;
+
+        while (mainGame){
             System.out.println("\n" + "Round 1: Red, Green, and Yellow");
             //colors
             String userInput = inputScanner.nextLine();
@@ -57,67 +59,67 @@ public class wordGame {
 
                                                 if (userInput.equalsIgnoreCase("horses") || userInput.equalsIgnoreCase("cars")){
                                                     System.out.println("\nCongratulations! You won the game!");
-                                                    break;
+                                                    mainGame = false;
 
                                                 } else if (userInput.equalsIgnoreCase("0")) {
                                                     System.out.println("Thank you for playing");
-                                                    break;
+                                                    mainGame = false;
                                                 } else if (!userInput.equalsIgnoreCase("horses") || !userInput.equalsIgnoreCase("cars")){
                                                     System.out.println("Round 10 Hint: Modes of transportation");
                                                 }
 
                                             } else if (userInput.equalsIgnoreCase("0")) {
                                                 System.out.println("Thank you for playing");
-                                                break;
+                                                mainGame = false;
                                             } else if (!userInput.equalsIgnoreCase("beer")){
                                                 System.out.println("Round 9 Hint: Relax with one of these");
                                             }
 
                                         } else if (userInput.equalsIgnoreCase("0")) {
                                             System.out.println("Thank you for playing");
-                                            break;
+                                            mainGame = false;
                                         } else if (!userInput.equalsIgnoreCase("golden girls") || !userInput.equalsIgnoreCase("the golden girls")){
                                             System.out.println("Round 8 Hint: A golden TV show");
                                         }
 
                                     }else if (userInput.equalsIgnoreCase("0")) {
                                         System.out.println("Thank you for playing");
-                                        break;
+                                        mainGame = false;
                                     } else if (!userInput.equalsIgnoreCase("gun brands")){
                                         System.out.println("Round 7 Hint: bang bang");
                                     }
 
                                 } else if (userInput.equalsIgnoreCase("0")) {
                                     System.out.println("Thank you for playing");
-                                    break;
+                                    mainGame = false;
                                 } else if (!userInput.equalsIgnoreCase("programming languages")){
                                     System.out.println("Round 6 Hint: This game uses one of these to run");
                                 }
 
                             } else if (userInput.equalsIgnoreCase("0")) {
                                 System.out.println("Thank you for playing");
-                                break;
+                                mainGame = false;
                             } else if (!userInput.equalsIgnoreCase("trees")){
                                 System.out.println("Round 5 Hint: You can climb these");
                             }
 
                         } else if (userInput.equalsIgnoreCase("0")){
                             System.out.println("Thank you for playing");
-                            break;
+                            mainGame = false;
                         } else if(!userInput.equalsIgnoreCase("")){
                             System.out.println("Round 4 Hint: Think Gambling & Vegas");
                         }
 
                     } else if (userInput.equalsIgnoreCase("0")){
                         System.out.println("Thank you for playing");
-                        break;
+                        mainGame = false;
                     } else if (!userInput.equalsIgnoreCase("numbers")){
                         System.out.println("Round 3 Hint: You count with these");
                     }
 
                 } else if (userInput.equalsIgnoreCase("0")){
                     System.out.println("Thank you for playing");
-                    break;
+                    mainGame = false;
                 } else if (!userInput.equalsIgnoreCase("cartoons")){
                     System.out.println("Round 2 Hint: Saturday morning ________");
                 }
@@ -125,7 +127,7 @@ public class wordGame {
 
             } else if (userInput.equalsIgnoreCase("0")){
                 System.out.println("Thank you for playing");
-                break;
+                mainGame = false;
 
             } else if (!userInput.equalsIgnoreCase("colors")){
                 System.out.println("Round 1 Hint: you use these to paint or draw with");
