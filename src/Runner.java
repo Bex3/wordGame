@@ -17,6 +17,11 @@ public class Runner {
 
         Round theRound = new Round();
 
+        String userInput = inputScanner.nextLine();
+//        if(userInput.equalsIgnoreCase()){
+//
+//        }
+
 
     }
 }
