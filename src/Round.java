@@ -27,6 +27,27 @@ public class Round {
     String hintNineteen = "Not iron or steel";
     String hintTwenty = "Neil Tyson Degrasse";
 
+    String answerOne = "colors";
+    String answerTwo = "numbers";
+    String answerThree = "cartoons";
+    String answerFour = "golden girls";
+    String answerFive = "beer";
+    String answerSix = "horses";
+    String answerSeven = "rivers";
+    String answerEight = "poker hands";
+    String answerNine = "programming languages";
+    String answerTen = "gun brands";
+    String answerEleven = "dog breeds";
+    String answerTwelve = "trees";
+    String answerThirteen = "time zones";
+    String answerFourteen = "Scandinavian countries";
+    String answerFifteen = "paper types";
+    String answerSixteen = "musical instruments";
+    String answerSeventeen = "ear bones";
+    String answerEighteen = "coffee";
+    String answerNineteen = "non-ferrous metals";
+    String answerTwenty = "moons of Neptune";
+
     ArrayList <String> roundOne = new ArrayList<>();
     ArrayList <String> roundTwo = new ArrayList<>();
     ArrayList <String> roundThree = new ArrayList<>();
@@ -133,4 +154,12 @@ public class Round {
         roundTwenty.add(2, "Larissa");
     }
 
+    public Round() {
+    }
+
+    public Round(String answer, String hint, ArrayList<String> roundOne){
+        this.answerOne= answer;
+        this.hintOne = hint;
+        this.roundOne= roundOne;
+    }
 }
