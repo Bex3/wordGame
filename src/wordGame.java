@@ -134,17 +134,17 @@ public class wordGame {
                                                                                                                                                             roundNineteen = false;
                                                                                                                                                             boolean roundTwenty = true;
                                                                                                                                                             while(roundTwenty){
-                                                                                                                                                                System.out.println("Round 20: ");
+                                                                                                                                                                System.out.println("Round 20: Glossy, Plain, and Heavy" + "\nThis answer is two words");
                                                                                                                                                                 userInput = inputScanner.nextLine();
-                                                                                                                                                                if(userInput.equalsIgnoreCase("")){
-                                                                                                                                                                    
-                                                                                                                                                                    System.out.println("Congratulations you wond the game!");
+                                                                                                                                                                if(userInput.equalsIgnoreCase("paper types")){
+                                                                                                                                                                    roundTwenty = false;
+                                                                                                                                                                    System.out.println("Congratulations you won the game!");
                                                                                                                                                                     roundOne = false;
                                                                                                                                                                 } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                                                     System.out.println("Thanks for playing");
                                                                                                                                                                     roundOne = false;
-                                                                                                                                                                } else if (!userInput.equalsIgnoreCase("")){
-                                                                                                                                                                    System.out.println("Round 20 Hint: ");
+                                                                                                                                                                } else if (!userInput.equalsIgnoreCase("paper types")){
+                                                                                                                                                                    System.out.println("Round 20 Hint: Write it down");
                                                                                                                                                                 }
                                                                                                                                                             }
 
