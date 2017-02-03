@@ -40,7 +40,7 @@ public class wordGame {
                                         roundFour = false;
                                         boolean roundFive = true;
                                         while(roundFive){
-                                            System.out.println("\n\nRound 5: Larch, Linden, and Orange");
+                                            System.out.println("\nRound 5: Larch, Linden, and Orange");
                                             userInput = inputScanner.nextLine();
 
                                             if (userInput.equalsIgnoreCase("trees")){
@@ -140,29 +140,96 @@ public class wordGame {
                                                                                                                                                                     roundOne = false;
                                                                                                                                                                 } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                                                     System.out.println("Thanks for playing");
-                                                                                                                                                                    roundOne = false;
-                                                                                                                                                                } else if (!userInput.equalsIgnoreCase("paper types")){
+                                                                                                                                                                    roundTwenty = false;
+                                                                                                                                                                    roundNineteen = false;
+                                                                                                                                                                    roundEighteen = false;
+                                                                                                                                                                    roundSeventeen = false;
+                                                                                                                                                                    roundSixteen = false;
+                                                                                                                                                                    roundFifteen = false;
+                                                                                                                                                                    roundFourteen = false;
+                                                                                                                                                                    roundThirteen = false;
+                                                                                                                                                                    roundTwelve = false;
+                                                                                                                                                                    roundEleven = false;
+                                                                                                                                                                    roundTen = false;
+                                                                                                                                                                    roundNine = false;
+                                                                                                                                                                    roundEight = false;
+                                                                                                                                                                    roundSeven = false;
+                                                                                                                                                                    roundSix = false;
+                                                                                                                                                                    roundFive = false;
+                                                                                                                                                                    roundFour = false;
+                                                                                                                                                                    roundThree = false;
+                                                                                                                                                                    roundTwo = false;
+                                                                                                                                                                    roundOne = false;                                                                                                                                                                 } else if (!userInput.equalsIgnoreCase("paper types")){
                                                                                                                                                                     System.out.println("Round 20 Hint: Write it down");
                                                                                                                                                                 }
                                                                                                                                                             }
 
                                                                                                                                                         } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                                             System.out.println("Thanks for playing");
-                                                                                                                                                            roundOne = false;
-                                                                                                                                                        } else if (!userInput.equalsIgnoreCase("rivers")) {
+                                                                                                                                                            roundNineteen = false;
+                                                                                                                                                            roundEighteen = false;
+                                                                                                                                                            roundSeventeen = false;
+                                                                                                                                                            roundSixteen = false;
+                                                                                                                                                            roundFifteen = false;
+                                                                                                                                                            roundFourteen = false;
+                                                                                                                                                            roundThirteen = false;
+                                                                                                                                                            roundTwelve = false;
+                                                                                                                                                            roundEleven = false;
+                                                                                                                                                            roundTen = false;
+                                                                                                                                                            roundNine = false;
+                                                                                                                                                            roundEight = false;
+                                                                                                                                                            roundSeven = false;
+                                                                                                                                                            roundSix = false;
+                                                                                                                                                            roundFive = false;
+                                                                                                                                                            roundFour = false;
+                                                                                                                                                            roundThree = false;
+                                                                                                                                                            roundTwo = false;
+                                                                                                                                                            roundOne = false;                                                                                                                                                          } else if (!userInput.equalsIgnoreCase("rivers")) {
                                                                                                                                                             System.out.println("Round 19 Hint: Way down yonder on the Chattahoochee");
                                                                                                                                                         }
                                                                                                                                                     }
                                                                                                                                                 }  else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                                     System.out.println("Thanks for playing");
-                                                                                                                                                    roundOne = false;
-                                                                                                                                                } else if (!userInput.equalsIgnoreCase("time zones")){
+                                                                                                                                                    roundEighteen = false;
+                                                                                                                                                    roundSeventeen = false;
+                                                                                                                                                    roundSixteen = false;
+                                                                                                                                                    roundFifteen = false;
+                                                                                                                                                    roundFourteen = false;
+                                                                                                                                                    roundThirteen = false;
+                                                                                                                                                    roundTwelve = false;
+                                                                                                                                                    roundEleven = false;
+                                                                                                                                                    roundTen = false;
+                                                                                                                                                    roundNine = false;
+                                                                                                                                                    roundEight = false;
+                                                                                                                                                    roundSeven = false;
+                                                                                                                                                    roundSix = false;
+                                                                                                                                                    roundFive = false;
+                                                                                                                                                    roundFour = false;
+                                                                                                                                                    roundThree = false;
+                                                                                                                                                    roundTwo = false;
+                                                                                                                                                    roundOne = false;                                                                                                                                                } else if (!userInput.equalsIgnoreCase("time zones")){
                                                                                                                                                     System.out.println("\nRound 18 Hint: Pay attention to you watch when traveling across these");
                                                                                                                                                 }
                                                                                                                                             }
 
                                                                                                                                         } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                             System.out.println("Thanks for playing");
+                                                                                                                                            roundSeventeen = false;
+                                                                                                                                            roundSixteen = false;
+                                                                                                                                            roundFifteen = false;
+                                                                                                                                            roundFourteen = false;
+                                                                                                                                            roundThirteen = false;
+                                                                                                                                            roundTwelve = false;
+                                                                                                                                            roundEleven = false;
+                                                                                                                                            roundTen = false;
+                                                                                                                                            roundNine = false;
+                                                                                                                                            roundEight = false;
+                                                                                                                                            roundSeven = false;
+                                                                                                                                            roundSix = false;
+                                                                                                                                            roundFive = false;
+                                                                                                                                            roundFour = false;
+                                                                                                                                            roundThree = false;
+                                                                                                                                            roundTwo = false;
                                                                                                                                             roundOne = false;
                                                                                                                                         } else if (!userInput.equalsIgnoreCase("moons of Neptune") || !userInput.equalsIgnoreCase("Meptune's moons")){
                                                                                                                                             System.out.println("\nRound 17 Hint: Neil Tyson Degrasse");
@@ -171,37 +238,98 @@ public class wordGame {
 
                                                                                                                                 } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                     System.out.println("Thanks for playing");
-                                                                                                                                    roundOne = false;
-                                                                                                                                } else if (!userInput.equalsIgnoreCase("non-ferrous metals") || !userInput.equalsIgnoreCase("nonferrous metals")){
+                                                                                                                                    roundSixteen = false;
+                                                                                                                                    roundFifteen = false;
+                                                                                                                                    roundFourteen = false;
+                                                                                                                                    roundThirteen = false;
+                                                                                                                                    roundTwelve = false;
+                                                                                                                                    roundEleven = false;
+                                                                                                                                    roundTen = false;
+                                                                                                                                    roundNine = false;
+                                                                                                                                    roundEight = false;
+                                                                                                                                    roundSeven = false;
+                                                                                                                                    roundSix = false;
+                                                                                                                                    roundFive = false;
+                                                                                                                                    roundFour = false;
+                                                                                                                                    roundThree = false;
+                                                                                                                                    roundTwo = false;
+                                                                                                                                    roundOne = false;                                                                                                                                } else if (!userInput.equalsIgnoreCase("non-ferrous metals") || !userInput.equalsIgnoreCase("nonferrous metals")){
                                                                                                                                     System.out.println("\nRound 16 Hint: Not iron or steel");
                                                                                                                                 }
                                                                                                                             }
                                                                                                                         } else if (userInput.equalsIgnoreCase("0")) {
                                                                                                                             System.out.println("Thanks for playing");
-                                                                                                                            roundOne = false;
-                                                                                                                        } else if (!userInput.equalsIgnoreCase("Scandinavian countries")){
+                                                                                                                            roundFifteen = false;
+                                                                                                                            roundFourteen = false;
+                                                                                                                            roundThirteen = false;
+                                                                                                                            roundTwelve = false;
+                                                                                                                            roundEleven = false;
+                                                                                                                            roundTen = false;
+                                                                                                                            roundNine = false;
+                                                                                                                            roundEight = false;
+                                                                                                                            roundSeven = false;
+                                                                                                                            roundSix = false;
+                                                                                                                            roundFive = false;
+                                                                                                                            roundFour = false;
+                                                                                                                            roundThree = false;
+                                                                                                                            roundTwo = false;
+                                                                                                                            roundOne = false;                                                                                                                         } else if (!userInput.equalsIgnoreCase("Scandinavian countries")){
                                                                                                                             System.out.println("\nRound 15 Hint: Historical and cultural region in Northern Europe");
                                                                                                                         }
                                                                                                                     }
 
                                                                                                                 } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                     System.out.println("Thanks for playing");
-                                                                                                                    roundOne = false;
-                                                                                                                } else if (!userInput.equalsIgnoreCase("musical instruments")){
+                                                                                                                    roundFourteen = false;
+                                                                                                                    roundThirteen = false;
+                                                                                                                    roundTwelve = false;
+                                                                                                                    roundEleven = false;
+                                                                                                                    roundTen = false;
+                                                                                                                    roundNine = false;
+                                                                                                                    roundEight = false;
+                                                                                                                    roundSeven = false;
+                                                                                                                    roundSix = false;
+                                                                                                                    roundFive = false;
+                                                                                                                    roundFour = false;
+                                                                                                                    roundThree = false;
+                                                                                                                    roundTwo = false;
+                                                                                                                    roundOne = false;                                                                                                                } else if (!userInput.equalsIgnoreCase("musical instruments")){
                                                                                                                     System.out.println("\nRound 14 Hint: Play for a cool tune");
                                                                                                                 }
                                                                                                             }
 
                                                                                                         } else if (userInput.equalsIgnoreCase("0")){
                                                                                                             System.out.println("Thanks for playing");
-                                                                                                            roundOne = false;
-                                                                                                        } else if (!userInput.equalsIgnoreCase("coffee")){
+                                                                                                            roundThirteen = false;
+                                                                                                            roundTwelve = false;
+                                                                                                            roundEleven = false;
+                                                                                                            roundTen = false;
+                                                                                                            roundNine = false;
+                                                                                                            roundEight = false;
+                                                                                                            roundSeven = false;
+                                                                                                            roundSix = false;
+                                                                                                            roundFive = false;
+                                                                                                            roundFour = false;
+                                                                                                            roundThree = false;
+                                                                                                            roundTwo = false;
+                                                                                                            roundOne = false;                                                                                                        } else if (!userInput.equalsIgnoreCase("coffee")){
                                                                                                             System.out.println("\nRound 13 Hint: The fuel of programmers");
                                                                                                         }
                                                                                                     }
 
                                                                                                 } else if (userInput.equalsIgnoreCase("0")){
                                                                                                     System.out.println("Thank you for playing");
+                                                                                                    roundTwelve = false;
+                                                                                                    roundEleven = false;
+                                                                                                    roundTen = false;
+                                                                                                    roundNine = false;
+                                                                                                    roundEight = false;
+                                                                                                    roundSeven = false;
+                                                                                                    roundSix = false;
+                                                                                                    roundFive = false;
+                                                                                                    roundFour = false;
+                                                                                                    roundThree = false;
+                                                                                                    roundTwo = false;
                                                                                                     roundOne = false;
                                                                                                 } else if (!userInput.equalsIgnoreCase("ear bones")){
                                                                                                     System.out.println("\nRound 12 Hint: Listen Carefully");
@@ -210,8 +338,17 @@ public class wordGame {
 
                                                                                             } else if (userInput.equalsIgnoreCase("0")){
                                                                                                 System.out.println("Thank you for playing");
-                                                                                                roundOne = false;
-                                                                                            } else if (!userInput.equalsIgnoreCase("dog breeds")){
+                                                                                                roundEleven = false;
+                                                                                                roundTen = false;
+                                                                                                roundNine = false;
+                                                                                                roundEight = false;
+                                                                                                roundSeven = false;
+                                                                                                roundSix = false;
+                                                                                                roundFive = false;
+                                                                                                roundFour = false;
+                                                                                                roundThree = false;
+                                                                                                roundTwo = false;
+                                                                                                roundOne = false;                                                                                            } else if (!userInput.equalsIgnoreCase("dog breeds")){
                                                                                                 System.out.println("\nRound 11 Hint: Man's best friend");
                                                                                             }
 
@@ -219,6 +356,15 @@ public class wordGame {
 
                                                                                     } else if (userInput.equalsIgnoreCase("0")) {
                                                                                         System.out.println("Thank you for playing");
+                                                                                        roundTen = false;
+                                                                                        roundNine = false;
+                                                                                        roundEight = false;
+                                                                                        roundSeven = false;
+                                                                                        roundSix = false;
+                                                                                        roundFive = false;
+                                                                                        roundFour = false;
+                                                                                        roundThree = false;
+                                                                                        roundTwo = false;
                                                                                         roundOne = false;
                                                                                     } else if (!userInput.equalsIgnoreCase("horses") || !userInput.equalsIgnoreCase("cars")){
                                                                                         System.out.println("\nRound 10 Hint: Modes of transportation");
@@ -226,6 +372,14 @@ public class wordGame {
                                                                                 }
                                                                             } else if (userInput.equalsIgnoreCase("0")) {
                                                                                 System.out.println("Thank you for playing");
+                                                                                roundNine = false;
+                                                                                roundEight = false;
+                                                                                roundSeven = false;
+                                                                                roundSix = false;
+                                                                                roundFive = false;
+                                                                                roundFour = false;
+                                                                                roundThree = false;
+                                                                                roundTwo = false;
                                                                                 roundOne = false;
                                                                             } else if (!userInput.equalsIgnoreCase("beer")){
                                                                                 System.out.println("\nRound 9 Hint: Relax with one of these");
@@ -235,6 +389,13 @@ public class wordGame {
 
                                                                     } else if (userInput.equalsIgnoreCase("0")) {
                                                                         System.out.println("Thank you for playing");
+                                                                        roundEight = false;
+                                                                        roundSeven = false;
+                                                                        roundSix = false;
+                                                                        roundFive = false;
+                                                                        roundFour = false;
+                                                                        roundThree = false;
+                                                                        roundTwo = false;
                                                                         roundOne = false;
                                                                     } else if (!userInput.equalsIgnoreCase("golden girls") || !userInput.equalsIgnoreCase("the golden girls")){
                                                                         System.out.println("\nRound 8 Hint: A golden TV show");
@@ -244,6 +405,12 @@ public class wordGame {
 
                                                             }else if (userInput.equalsIgnoreCase("0")) {
                                                                 System.out.println("Thank you for playing");
+                                                                roundSeven = false;
+                                                                roundSix = false;
+                                                                roundFive = false;
+                                                                roundFour = false;
+                                                                roundThree = false;
+                                                                roundTwo = false;
                                                                 roundOne = false;
                                                             } else if (!userInput.equalsIgnoreCase("gun brands")){
                                                                 System.out.println("\nRound 7 Hint: bang bang");
@@ -254,6 +421,11 @@ public class wordGame {
 
                                                     } else if (userInput.equalsIgnoreCase("0")) {
                                                         System.out.println("Thank you for playing");
+                                                        roundSix = false;
+                                                        roundFive = false;
+                                                        roundFour = false;
+                                                        roundThree = false;
+                                                        roundTwo = false;
                                                         roundOne = false;
                                                     } else if (!userInput.equalsIgnoreCase("programming languages")){
                                                         System.out.println("\nRound 6 Hint: This game uses one of these to run");
@@ -265,6 +437,10 @@ public class wordGame {
 
                                             } else if (userInput.equalsIgnoreCase("0")) {
                                                 System.out.println("Thank you for playing");
+                                                roundFive = false;
+                                                roundFour = false;
+                                                roundThree = false;
+                                                roundTwo = false;
                                                 roundOne = false;
                                             } else if (!userInput.equalsIgnoreCase("trees")){
                                                 System.out.println("\nRound 5 Hint: You can climb these");
@@ -275,6 +451,9 @@ public class wordGame {
 
                                     } else if (userInput.equalsIgnoreCase("0")){
                                         System.out.println("Thank you for playing");
+                                        roundFour = false;
+                                        roundThree = false;
+                                        roundTwo = false;
                                         roundOne = false;
                                     } else if(!userInput.equalsIgnoreCase("")){
                                         System.out.println("\nRound 4 Hint: Think Gambling & Vegas");
@@ -284,6 +463,8 @@ public class wordGame {
 
                             } else if (userInput.equalsIgnoreCase("0")){
                                 System.out.println("Thank you for playing");
+                                roundThree = false;
+                                roundTwo = false;
                                 roundOne = false;
                             } else if (!userInput.equalsIgnoreCase("numbers")){
                                 System.out.println("\nRound 3 Hint: You count with these");
@@ -295,6 +476,7 @@ public class wordGame {
 
                     } else if (userInput.equalsIgnoreCase("0")){
                         System.out.println("Thank you for playing");
+                        roundTwo = false;
                         roundOne = false;
                     } else if (!userInput.equalsIgnoreCase("cartoons")){
                         System.out.println("\nRound 2 Hint: Saturday morning ________");
