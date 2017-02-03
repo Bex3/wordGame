@@ -39,7 +39,6 @@ public class wordGame {
                                     if (userInput.equalsIgnoreCase("poker hands") || (userInput.equalsIgnoreCase("poker hands"))) {
                                         roundFour = false;
                                         boolean roundFive = true;
-                                        System.out.println("\nCongratulations! You made it to the 5th Round! ");
                                         while(roundFive){
                                             System.out.println("\n\nRound 5: Larch, Linden, and Orange");
                                             userInput = inputScanner.nextLine();
@@ -78,13 +77,12 @@ public class wordGame {
                                                                                     if (userInput.equalsIgnoreCase("horses") || userInput.equalsIgnoreCase("cars")){
                                                                                         roundTen = false;
                                                                                         boolean roundEleven = true;
-
                                                                                         while(roundEleven) {
                                                                                             System.out.println("\nRound 11: Chinook, Azawakh, and Mudi" + "\nThis answer is two words");
                                                                                             userInput = inputScanner.nextLine();
                                                                                             if(userInput.equalsIgnoreCase("dog breeds")){
                                                                                                 roundEleven = false;
-                                                                                                boolean roundTwelve = false;
+                                                                                                boolean roundTwelve = true;
                                                                                             while(roundTwelve){
                                                                                                 System.out.println("Round 12: Hammer, Anvil, and Stirrup" + "\nThis answer is also two words");
                                                                                                 userInput = inputScanner.nextLine();
@@ -98,7 +96,7 @@ public class wordGame {
                                                                                                             roundThirteen = false;
                                                                                                             boolean roundFourteen = true;
                                                                                                             while(roundFourteen){
-                                                                                                                System.out.println("\nRound 14: Lur, Cajon, and Crwth" + "\n This answer is two words");
+                                                                                                                System.out.println("\nRound 14: Lur, Cajon, and Crwth" + "\nThis answer is two words");
                                                                                                                 userInput = inputScanner.nextLine();
                                                                                                                 if(userInput.equalsIgnoreCase("musical instruments")){
                                                                                                                     roundFourteen = false;
@@ -134,7 +132,7 @@ public class wordGame {
                                                                                                                                                             roundNineteen = false;
                                                                                                                                                             boolean roundTwenty = true;
                                                                                                                                                             while(roundTwenty){
-                                                                                                                                                                System.out.println("Round 20: Glossy, Plain, and Heavy" + "\nThis answer is two words");
+                                                                                                                                                                System.out.println("\nRound 20: Glossy, Plain, and Heavy" + "\nThis answer is two words");
                                                                                                                                                                 userInput = inputScanner.nextLine();
                                                                                                                                                                 if(userInput.equalsIgnoreCase("paper types")){
                                                                                                                                                                     roundTwenty = false;
@@ -148,6 +146,11 @@ public class wordGame {
                                                                                                                                                                 }
                                                                                                                                                             }
 
+                                                                                                                                                        } else if (userInput.equalsIgnoreCase("0")){
+                                                                                                                                                            System.out.println("Thanks for playing");
+                                                                                                                                                            roundOne = false;
+                                                                                                                                                        } else if (!userInput.equalsIgnoreCase("rivers")) {
+                                                                                                                                                            System.out.println("Round 19 Hint: Way down yonder on the Chattahoochee");
                                                                                                                                                         }
                                                                                                                                                     }
                                                                                                                                                 }  else if (userInput.equalsIgnoreCase("0")){
@@ -162,7 +165,7 @@ public class wordGame {
                                                                                                                                             System.out.println("Thanks for playing");
                                                                                                                                             roundOne = false;
                                                                                                                                         } else if (!userInput.equalsIgnoreCase("moons of Neptune") || !userInput.equalsIgnoreCase("Meptune's moons")){
-                                                                                                                                            System.out.println("Round 17 Hint: Neil Tyson Degrasse");
+                                                                                                                                            System.out.println("\nRound 17 Hint: Neil Tyson Degrasse");
                                                                                                                                         }
                                                                                                                                     }
 
@@ -170,14 +173,14 @@ public class wordGame {
                                                                                                                                     System.out.println("Thanks for playing");
                                                                                                                                     roundOne = false;
                                                                                                                                 } else if (!userInput.equalsIgnoreCase("non-ferrous metals") || !userInput.equalsIgnoreCase("nonferrous metals")){
-                                                                                                                                    System.out.println("Round 16 Hint: Not iron or steel");
+                                                                                                                                    System.out.println("\nRound 16 Hint: Not iron or steel");
                                                                                                                                 }
                                                                                                                             }
                                                                                                                         } else if (userInput.equalsIgnoreCase("0")) {
                                                                                                                             System.out.println("Thanks for playing");
                                                                                                                             roundOne = false;
                                                                                                                         } else if (!userInput.equalsIgnoreCase("Scandinavian countries")){
-                                                                                                                            System.out.println("Round 15 Hint: Historical and cultural region in Northern Europe");
+                                                                                                                            System.out.println("\nRound 15 Hint: Historical and cultural region in Northern Europe");
                                                                                                                         }
                                                                                                                     }
 
@@ -185,7 +188,7 @@ public class wordGame {
                                                                                                                     System.out.println("Thanks for playing");
                                                                                                                     roundOne = false;
                                                                                                                 } else if (!userInput.equalsIgnoreCase("musical instruments")){
-                                                                                                                    System.out.println("Round 14 Hint: Play for a cool tune");
+                                                                                                                    System.out.println("\nRound 14 Hint: Play for a cool tune");
                                                                                                                 }
                                                                                                             }
 
@@ -193,7 +196,7 @@ public class wordGame {
                                                                                                             System.out.println("Thanks for playing");
                                                                                                             roundOne = false;
                                                                                                         } else if (!userInput.equalsIgnoreCase("coffee")){
-                                                                                                            System.out.println("Round 13 Hint: The fuel of programmers");
+                                                                                                            System.out.println("\nRound 13 Hint: The fuel of programmers");
                                                                                                         }
                                                                                                     }
 
@@ -201,7 +204,7 @@ public class wordGame {
                                                                                                     System.out.println("Thank you for playing");
                                                                                                     roundOne = false;
                                                                                                 } else if (!userInput.equalsIgnoreCase("ear bones")){
-                                                                                                    System.out.println("Round 12 Hint: Listen Carefully");
+                                                                                                    System.out.println("\nRound 12 Hint: Listen Carefully");
                                                                                                 }
                                                                                             }
 
@@ -209,7 +212,7 @@ public class wordGame {
                                                                                                 System.out.println("Thank you for playing");
                                                                                                 roundOne = false;
                                                                                             } else if (!userInput.equalsIgnoreCase("dog breeds")){
-                                                                                                System.out.println("Round 11 Hint: Man's best friend");
+                                                                                                System.out.println("\nRound 11 Hint: Man's best friend");
                                                                                             }
 
                                                                                         }
@@ -218,14 +221,14 @@ public class wordGame {
                                                                                         System.out.println("Thank you for playing");
                                                                                         roundOne = false;
                                                                                     } else if (!userInput.equalsIgnoreCase("horses") || !userInput.equalsIgnoreCase("cars")){
-                                                                                        System.out.println("Round 10 Hint: Modes of transportation");
+                                                                                        System.out.println("\nRound 10 Hint: Modes of transportation");
                                                                                     }
                                                                                 }
                                                                             } else if (userInput.equalsIgnoreCase("0")) {
                                                                                 System.out.println("Thank you for playing");
                                                                                 roundOne = false;
                                                                             } else if (!userInput.equalsIgnoreCase("beer")){
-                                                                                System.out.println("Round 9 Hint: Relax with one of these");
+                                                                                System.out.println("\nRound 9 Hint: Relax with one of these");
                                                                             }
                                                                         }
 
@@ -234,7 +237,7 @@ public class wordGame {
                                                                         System.out.println("Thank you for playing");
                                                                         roundOne = false;
                                                                     } else if (!userInput.equalsIgnoreCase("golden girls") || !userInput.equalsIgnoreCase("the golden girls")){
-                                                                        System.out.println("Round 8 Hint: A golden TV show");
+                                                                        System.out.println("\nRound 8 Hint: A golden TV show");
                                                                     }
                                                                 }
 
@@ -243,7 +246,7 @@ public class wordGame {
                                                                 System.out.println("Thank you for playing");
                                                                 roundOne = false;
                                                             } else if (!userInput.equalsIgnoreCase("gun brands")){
-                                                                System.out.println("Round 7 Hint: bang bang");
+                                                                System.out.println("\nRound 7 Hint: bang bang");
                                                             }
                                                         }
 
@@ -253,7 +256,7 @@ public class wordGame {
                                                         System.out.println("Thank you for playing");
                                                         roundOne = false;
                                                     } else if (!userInput.equalsIgnoreCase("programming languages")){
-                                                        System.out.println("Round 6 Hint: This game uses one of these to run");
+                                                        System.out.println("\nRound 6 Hint: This game uses one of these to run");
                                                     }
                                                 }
 
@@ -264,7 +267,7 @@ public class wordGame {
                                                 System.out.println("Thank you for playing");
                                                 roundOne = false;
                                             } else if (!userInput.equalsIgnoreCase("trees")){
-                                                System.out.println("Round 5 Hint: You can climb these");
+                                                System.out.println("\nRound 5 Hint: You can climb these");
                                             }
                                         }
 
@@ -274,7 +277,7 @@ public class wordGame {
                                         System.out.println("Thank you for playing");
                                         roundOne = false;
                                     } else if(!userInput.equalsIgnoreCase("")){
-                                        System.out.println("Round 4 Hint: Think Gambling & Vegas");
+                                        System.out.println("\nRound 4 Hint: Think Gambling & Vegas");
                                     }
                                 }
 
@@ -283,7 +286,7 @@ public class wordGame {
                                 System.out.println("Thank you for playing");
                                 roundOne = false;
                             } else if (!userInput.equalsIgnoreCase("numbers")){
-                                System.out.println("Round 3 Hint: You count with these");
+                                System.out.println("\nRound 3 Hint: You count with these");
                             }
 
                         }
@@ -294,7 +297,7 @@ public class wordGame {
                         System.out.println("Thank you for playing");
                         roundOne = false;
                     } else if (!userInput.equalsIgnoreCase("cartoons")){
-                        System.out.println("Round 2 Hint: Saturday morning ________");
+                        System.out.println("\nRound 2 Hint: Saturday morning ________");
                     }
 
                 }
@@ -304,7 +307,7 @@ public class wordGame {
                 roundOne = false;
 
             } else if (!userInput.equalsIgnoreCase("colors")){
-                System.out.println("Round 1 Hint: you use these to paint or draw with");
+                System.out.println("\nRound 1 Hint: you use these to paint or draw with");
             }
 
         }
