@@ -84,7 +84,7 @@ public class wordGame {
                                                                                                 roundEleven = false;
                                                                                                 boolean roundTwelve = true;
                                                                                             while(roundTwelve){
-                                                                                                System.out.println("Round 12: Hammer, Anvil, and Stirrup" + "\nThis answer is also two words");
+                                                                                                System.out.println("\nRound 12: Hammer, Anvil, and Stirrup" + "\nThis answer is also two words");
                                                                                                 userInput = inputScanner.nextLine();
                                                                                                 if(userInput.equalsIgnoreCase("ear bones")){
                                                                                                     roundTwelve = false;
@@ -135,8 +135,8 @@ public class wordGame {
                                                                                                                                                                 System.out.println("\nRound 20: Glossy, Plain, and Heavy" + "\nThis answer is two words");
                                                                                                                                                                 userInput = inputScanner.nextLine();
                                                                                                                                                                 if(userInput.equalsIgnoreCase("paper types")){
-                                                                                                                                                                    roundTwenty = false;
                                                                                                                                                                     System.out.println("Congratulations you won the game!");
+                                                                                                                                                                    roundTwenty = false;
                                                                                                                                                                     roundOne = false;
                                                                                                                                                                 } else if (userInput.equalsIgnoreCase("0")){
                                                                                                                                                                     System.out.println("Thanks for playing");
