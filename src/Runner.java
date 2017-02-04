@@ -58,15 +58,19 @@ public class Runner {
         totalRounds.add(18, roundNineteen);
         totalRounds.add(19, roundTwenty);
 
-        for (Round currentRound: totalRounds) {
+        for (Round currentRound: totalRounds){
             System.out.println(currentRound.wordsForRound);
             String userInput = inputScanner.nextLine();
-            if (!userInput.equalsIgnoreCase(currentRound.answer)) {
-                System.out.println(currentRound.hint);
-            } else if (userInput.equalsIgnoreCase("0")) {
+            if(userInput.equalsIgnoreCase(currentRound.answer)){
+                continue;
+            } else if(userInput.equalsIgnoreCase("0")){
                 break;
+            } else if(!userInput.equalsIgnoreCase(currentRound.answer)){
+                System.out.println(currentRound.hint);
+        
             }
         }
+
     }
 
 }
