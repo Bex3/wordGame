@@ -6,12 +6,7 @@ import java.util.ArrayList;
 public class Round {
     //round composed of al categories, hint & answer
     String answer;
-//    String secondAnswer;
     String hint;
-    String word1;
-    String word2;
-    String word3;
-    String word4;
     ArrayList<String> wordsForRound = new ArrayList<>();
 
     public Round() {
