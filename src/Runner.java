@@ -15,26 +15,26 @@ public class Runner {
 
         Scanner inputScanner = new Scanner(System.in);
 
-        Round roundOne = new Round("colors", "You use these to paint or draw with", "Red", "Green", "Yellow");
-        Round roundTwo= new Round("Numbers", "You count with these", "Primes", "Evens", "Odds");
-        Round roundThree = new Round("cartoons", "Saturday morning ________", "Spongebob", "Tom & Jerry", "Courage The Cowardly Dog");
-        Round roundFour = new Round("Golden Girls", "A golden TV show", "Blanche", "Rose", "Dorothy", "Sophia");
-        Round roundFive = new Round("beer", "Relax with one of these", "Hops", "Yeast", "Water", "Grain") ;
-        Round roundSix = new Round("Cars named for horses", "Modes of transportation named after predecessors", "Bronco", "Mustang", "Brumby");
-        Round roundSeven = new Round("River", "Way down yonder on the Chattahoochee","Colorado", "Yellow", "Amazon");
-        Round roundEight = new Round("Poker Hands", "Think Gambling & Vegas", "Flush", "Straight", "Full House");
-        Round roundNine = new Round("Programming languages","This game is written in one of these", "Java", "Ruby", "C");
-        Round roundTen = new Round("gun brands", "bang bang", "Remington", "Colt", "Winchester");
-        Round roundEleven = new Round("dog breeds", "Man's best friend", "Chinook", "Azawakh", "Mudi");
-        Round roundTwelve = new Round("trees", "You can climb these", "Larch", "Linden", "Orange" );
-        Round roundThirteen = new Round("time zones", "Pay attention to your watch when you cross these", "Pacific", "Mountain", "Central");
-        Round roundFourteen = new Round("Scandinavian countries", "Historical and cultural region in Northern Europe...or Vikings", "Denmark", "Norway", "Sweden");
-        Round roundFifteen = new Round("paper types", "Write it down", "Glossy", "Plain", "Heavy");
-        Round roundSixteen = new Round("musical instruments", "Play a cool tune", "Lur", "Crwth", "Cajon");
-        Round roundSeventeen = new Round("ear bones", "Listen carefully", "Hammer", "Anvil", "Stirrup");
-        Round roundEighteen = new Round("coffee", "Fuel for programmers", "Cortadita", "Vienna", "Breve");
-        Round roundNineteen = new Round("non-ferrous metals", "Not iron or steel", "Zinc", "Brass", "Copper");
-        Round roundTwenty = new Round("moons of Neptune", "Neil Tyson Degrasse", "Despina", "Galatea", "Larissa");
+        Round roundOne = new Round("Red", "Green", "Yellow", "You use these to paint or draw with","colors");
+        Round roundTwo= new Round("Primes", "Evens", "Odds", "You count with these", "Numbers" );
+        Round roundThree = new Round("Spongebob", "Tom & Jerry", "Courage The Cowardly Dog","Saturday morning ________", "Cartoons");
+        Round roundFour = new Round("Blanche", "Rose", "Dorothy", "Sophia", "A golden TV show", "Golden Girls");
+        Round roundFive = new Round("Hops", "Yeast", "Water", "Grain", "Relax with one of these","beer") ;
+        Round roundSix = new Round("Bronco", "Mustang", "Brumby", "Modes of transportation named after predecessors","Cars named for horses");
+        Round roundSeven = new Round("Colorado", "Yellow", "Amazon", "Way down yonder on the Chattahoochee", "River");
+        Round roundEight = new Round("Flush", "Straight", "Full House", "Think Gambling & Vegas", "Poker Hands" );
+        Round roundNine = new Round("Java", "Ruby", "C", "This game is written in one of these","Programming languages");
+        Round roundTen = new Round("Remington", "Colt", "Winchester", "bang bang","gun brands");
+        Round roundEleven = new Round("Chinook", "Azawakh", "Mudi", "Man's best friend","dog breeds");
+        Round roundTwelve = new Round("Larch", "Linden", "Orange", "You can climb these", "trees");
+        Round roundThirteen = new Round("Pacific", "Mountain", "Central", "Pay attention to your watch when you cross these", "time zones");
+        Round roundFourteen = new Round("Denmark", "Norway", "Sweden", "Historical and cultural region in Northern Europe...or think Vikings", "Scandinavian countries");
+        Round roundFifteen = new Round("Glossy", "Plain", "Heavy", "Write it down","paper types");
+        Round roundSixteen = new Round("Lur", "Crwth", "Cajon", "Play a cool tune","musical instruments");
+        Round roundSeventeen = new Round("Hammer", "Anvil", "Stirrup", "Listen carefully", "ear bones");
+        Round roundEighteen = new Round("Cortadita", "Vienna", "Breve", "Fuel for programmers","coffee");
+        Round roundNineteen = new Round("Zinc", "Brass", "Copper", "Not iron or steel", "non-ferrous metals");
+        Round roundTwenty = new Round("Despina", "Galatea", "Larissa", "Neil Tyson Degrasse", "moons of Neptune");
 
         ArrayList<Round> totalRounds = new ArrayList<>();
         totalRounds.add(0, roundOne);
@@ -58,19 +58,19 @@ public class Runner {
         totalRounds.add(18, roundNineteen);
         totalRounds.add(19, roundTwenty);
 
-        for (Round currentRound: totalRounds){
-            System.out.println(currentRound.wordsForRound);
+
+        for (int index = 0; index < 100; index ++){
+            System.out.println(totalRounds.get(index).wordsForRound);
             String userInput = inputScanner.nextLine();
-            if(userInput.equalsIgnoreCase(currentRound.answer)){
+            if(userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
                 continue;
             } else if(userInput.equalsIgnoreCase("0")){
                 break;
-            } else if(!userInput.equalsIgnoreCase(currentRound.answer)){
-                System.out.println(currentRound.hint);
-        
+            } else if(!userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
+                System.out.println(totalRounds.get(index).hint);
+                index--;
             }
         }
-
     }
 
 }

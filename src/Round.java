@@ -12,7 +12,7 @@ public class Round {
     public Round() {
     }
 
-    public Round(String answer, String hint, String word1, String word2, String word3){
+    public Round(String word1, String word2, String word3, String hint, String answer){
         this.answer= answer;
         this.hint = hint;
         this.wordsForRound.add(word1);
@@ -20,7 +20,7 @@ public class Round {
         this.wordsForRound.add(word3);
     }
 
-    public Round(String answer, String hint, String word1, String word2, String word3, String word4){
+    public Round(String word1, String word2, String word3, String word4, String hint, String answer){
         this.answer= answer;
         this.hint = hint;
         this.wordsForRound.add(word1);
