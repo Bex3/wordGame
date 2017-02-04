@@ -23,13 +23,13 @@ public class wordGameTest {
     public void correctAnswer() throws Exception {
         wordGame newWordGame = new wordGame();
         String userOption = "colors";
-        assertTrue(newWordGame.gameFunctionUserInput(userOption));
+        assertTrue(newWordGame.gameFunctionUserInputParameters(userOption));
     }
 
     @Test
     public void wrongAnswer() throws Exception{
         wordGame newWordGame = new wordGame();
         String userOption = "chance";
-        assertFalse(newWordGame.gameFunctionUserInput(userOption));
+        assertFalse(newWordGame.gameFunctionUserInputParameters(userOption));
     }
 }
