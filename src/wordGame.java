@@ -1,4 +1,4 @@
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,9 +11,6 @@ public class wordGame {
         wordGame theGame = new wordGame();
         theGame.gameFunction();
     }
-
-
-
 
     public void gameFunction(){
         System.out.println("Welcome to the Guess the Common Denominator" + "\nFor example Water, Juice, and Coffee  \nThe answer would be drinks" + "\n* Don't add a space after your answer or it will be counted incorrect *");

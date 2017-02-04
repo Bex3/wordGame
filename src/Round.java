@@ -4,7 +4,6 @@ import java.util.ArrayList;
  * Created by bearden-tellez on 2/3/17.
  */
 public class Round {
-    //round composed of al categories, hint & answer
     String answer;
     String hint;
     ArrayList<String> wordsForRound = new ArrayList<>();
