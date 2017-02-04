@@ -55,7 +55,7 @@ public class wordGame {
             }
         }
     }
-    public boolean gameFunctionUserInputParameters(String userOption){
+    public TestingPackage gameFunctionUserInputParameters(String userOption){
         System.out.println("Welcome to the Guess the Common Denominator" + "\nFor example Water, Juice, and Coffee  \nThe answer would be drinks" + "\n* Don't add a space after your answer or it will be counted incorrect *");
         System.out.println("If you get an answer wrong, a hint will be displayed on the screen and you will be returned to the level that was incomplete. Also, most answers are in plural form");
         System.out.println("If you would like to exit at any time press 0");
@@ -104,13 +104,17 @@ public class wordGame {
         totalRounds.add(18, roundNineteen);
         totalRounds.add(19, roundTwenty);
 
+            TestingPackage newPack = new TestingPackage();
 
             System.out.println("\n" + ": "+ totalRounds.get(0).wordsForRound);
             if(userOption.equalsIgnoreCase(totalRounds.get(0).answer)){
-                return true;
+                newPack.setComplete(true);
+                return newPack;
             }  else if(!userOption.equalsIgnoreCase(totalRounds.get(0).answer)){
                 System.out.println(totalRounds.get(0).hint);
-                return false;
-            } return false;
+                newPack.setComplete(false);
+                newPack.setGameResponse(totalRounds.get(0).hint);
+                return newPack;
+            } return newPack;
     }
 }
