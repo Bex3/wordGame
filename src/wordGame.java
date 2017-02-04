@@ -60,51 +60,31 @@ public class wordGame {
         System.out.println("If you get an answer wrong, a hint will be displayed on the screen and you will be returned to the level that was incomplete. Also, most answers are in plural form");
         System.out.println("If you would like to exit at any time press 0");
 
-
-        Round roundOne = new Round("Red", "Green", "Yellow", "You use these to paint or draw with","colors");
-        Round roundTwo= new Round("Primes", "Evens", "Odds", "You count with these", "Numbers" );
-        Round roundThree = new Round("Spongebob", "Tom & Jerry", "Courage The Cowardly Dog","Saturday morning ________", "Cartoons");
-        Round roundFour = new Round("Blanche", "Rose", "Dorothy", "Sophia", "A golden TV show", "Golden Girls");
-        Round roundFive = new Round("Hops", "Yeast", "Water", "Grain", "Relax with one of these","beer") ;
-        Round roundSix = new Round("Bronco", "Mustang", "Brumby", "Modes of transportation named after predecessors","Cars named for horses");
-        Round roundSeven = new Round("Colorado", "Yellow", "Amazon", "Way down yonder on the Chattahoochee", "River");
-        Round roundEight = new Round("Flush", "Straight", "Full House", "Think Gambling & Vegas", "Poker Hands" );
-        Round roundNine = new Round("Java", "Ruby", "C", "This game is written in one of these","Programming languages");
-        Round roundTen = new Round("Remington", "Colt", "Winchester", "bang bang","gun brands");
-        Round roundEleven = new Round("Chinook", "Azawakh", "Mudi", "Man's best friend","dog breeds");
-        Round roundTwelve = new Round("Larch", "Linden", "Orange", "You can climb these", "trees");
-        Round roundThirteen = new Round("Pacific", "Mountain", "Central", "Pay attention to your watch when you cross these", "time zones");
-        Round roundFourteen = new Round("Denmark", "Norway", "Sweden", "Historical and cultural region in Northern Europe...or think Vikings", "Scandinavian countries");
-        Round roundFifteen = new Round("Glossy", "Plain", "Heavy", "Write it down","paper types");
-        Round roundSixteen = new Round("Lur", "Crwth", "Cajon", "Play a cool tune","musical instruments");
-        Round roundSeventeen = new Round("Hammer", "Anvil", "Stirrup", "Listen carefully", "ear bones");
-        Round roundEighteen = new Round("Cortadita", "Vienna", "Breve", "Fuel for programmers","coffee");
-        Round roundNineteen = new Round("Zinc", "Brass", "Copper", "Not iron or steel", "non-ferrous metals");
-        Round roundTwenty = new Round("Despina", "Galatea", "Larissa", "Neil Tyson Degrasse", "moons of Neptune");
-
         ArrayList<Round> totalRounds = new ArrayList<>();
-        totalRounds.add(0, roundOne);
-        totalRounds.add(1, roundTwo);
-        totalRounds.add(2, roundThree);
-        totalRounds.add(3, roundFour);
-        totalRounds.add(4, roundFive);
-        totalRounds.add(5, roundSix);
-        totalRounds.add(6, roundSeven);
-        totalRounds.add(7, roundEight);
-        totalRounds.add(8, roundNine);
-        totalRounds.add(9, roundTen);
-        totalRounds.add(10, roundEleven);
-        totalRounds.add(11, roundTwelve);
-        totalRounds.add(12, roundThirteen);
-        totalRounds.add(13, roundFourteen);
-        totalRounds.add(14, roundFifteen);
-        totalRounds.add(15, roundSixteen);
-        totalRounds.add(16, roundSeventeen);
-        totalRounds.add(17, roundEighteen);
-        totalRounds.add(18, roundNineteen);
-        totalRounds.add(19, roundTwenty);
+        totalRounds.add(0, new Round("Red", "Green", "Yellow", "You use these to paint or draw with","colors"));
+        totalRounds.add(1,  new Round("Primes", "Evens", "Odds", "You count with these", "Numbers"));
+        totalRounds.add(2, new Round("Spongebob", "Tom & Jerry", "Courage The Cowardly Dog","Saturday morning ________", "Cartoons"));
+        totalRounds.add(3, new Round("Blanche", "Rose", "Dorothy", "Sophia", "A golden TV show", "Golden Girls"));
+        totalRounds.add(4, new Round("Hops", "Yeast", "Water", "Grain", "Relax with one of these","beer"));
+        totalRounds.add(5, new Round("Bronco", "Mustang", "Brumby", "Modes of transportation named after predecessors","Cars named for horses"));
+        totalRounds.add(6, new Round("Colorado", "Yellow", "Amazon", "Way down yonder on the Chattahoochee", "River"));
+        totalRounds.add(7, new Round("Flush", "Straight", "Full House", "Think Gambling & Vegas", "Poker Hands" ));
+        totalRounds.add(8, new Round("Java", "Ruby", "C", "This game is written in one of these","Programming languages"));
+        totalRounds.add(9, new Round("Remington", "Colt", "Winchester", "bang bang","gun brands"));
+        totalRounds.add(10, new Round("Chinook", "Azawakh", "Mudi", "Man's best friend","dog breeds"));
+        totalRounds.add(11, new Round("Larch", "Linden", "Orange", "You can climb these", "trees"));
+        totalRounds.add(12, new Round("Pacific", "Mountain", "Central", "Pay attention to your watch when you cross these", "time zones"));
+        totalRounds.add(13, new Round("Denmark", "Norway", "Sweden", "Historical and cultural region in Northern Europe...or think Vikings", "Scandinavian countries"));
+        totalRounds.add(14, new Round("Glossy", "Plain", "Heavy", "Write it down","paper types"));
+        totalRounds.add(15, new Round("Lur", "Crwth", "Cajon", "Play a cool tune","musical instruments"));
+        totalRounds.add(16, new Round("Hammer", "Anvil", "Stirrup", "Listen carefully", "ear bones"));
+        totalRounds.add(17, new Round("Cortadita", "Vienna", "Breve", "Fuel for programmers","coffee"));
+        totalRounds.add(18, new Round("Zinc", "Brass", "Copper", "Not iron or steel", "non-ferrous metals"));
+        totalRounds.add(19, new Round("Despina", "Galatea", "Larissa", "Neil Tyson Degrasse", "moons of Neptune"));
 
-            TestingPackage newPack = new TestingPackage();
+
+
+        TestingPackage newPack = new TestingPackage();
 
             System.out.println("\n" + ": "+ totalRounds.get(0).wordsForRound);
             if(userOption.equalsIgnoreCase(totalRounds.get(0).answer)){
