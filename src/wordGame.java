@@ -11,11 +11,9 @@ public class wordGame {
     public static void main(String[] args) {
         wordGame theGame = new wordGame();
         theGame.gameFunction();
-        addRounds();
-//        theGame.playARound(totalRounds.get(0), "colors");
     }
 
-    public static void addRounds(){
+    public void addRounds(){
         totalRounds.add(0, new Round("Red", "Green", "Yellow", "You use these to paint or draw with","colors"));
         totalRounds.add(1,  new Round("Primes", "Evens", "Odds", "You count with these", "Numbers"));
         totalRounds.add(2, new Round("Spongebob", "Tom & Jerry", "Courage The Cowardly Dog","Saturday morning ________", "Cartoons"));
@@ -39,8 +37,7 @@ public class wordGame {
     }
 
     public void gameFunction(){
-        System.out.println("Welcome to the Guess the Common Denominator" + "\nFor example Water, Juice, and Coffee  \nThe answer would be drinks" + "\n* Don't add a space after your answer or it will be counted incorrect *");
-
+        System.out.println("Welcome to the Guess the Common Denominator" + "\nFor example Water, Juice, and Coffee  \nThe answer would be drinks" + "\n* Answers can range from one word to an entire phrase. Don't add a space after your answer or it will be counted incorrect *");
         System.out.println("If you get an answer wrong, a hint will be displayed on the screen and you will be returned to the level that was incomplete. Also, most answers are in plural form");
         System.out.println("If you would like to exit at any time press 0");
         Scanner inputScanner = new Scanner(System.in);
@@ -59,22 +56,20 @@ public class wordGame {
 //            }
 //        }
 
-    for(int index = 0; index < totalRounds.size(); index++){
-        System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
-        String userInput = inputScanner.nextLine();
-        if(userInput.equalsIgnoreCase("0")){
-            break;
+        for(int index = 0; index < totalRounds.size(); index++){
+            System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
+            String userInput = inputScanner.nextLine();
+            if(userInput.equalsIgnoreCase("0")){
+                break;
+            }
+            if(playARound(totalRounds.get(index), userInput).isComplete() == true){
+                continue;
+            } else if (playARound(totalRounds.get(index), userInput).isComplete() == false) {
+                System.out.println(playARound(totalRounds.get(index), userInput).gameResponse);
+                index --;
+            }
+
         }
-        if(playARound(totalRounds.get(index), userInput).isComplete() == true){
-            continue;
-        } else if (playARound(totalRounds.get(index), userInput).isComplete() == false) {
-            System.out.println(playARound(totalRounds.get(index), userInput).gameResponse);
-            index --;
-        }
-
-    }
-
-
     }
 
     public TestingPackage gameFunctionUserInputParameters(String userOption){
@@ -97,8 +92,6 @@ public class wordGame {
     }
 
     public TestingPackage playARound(Round playRound, String userChoice){
-//        for(int index = 0; index < 1; index ++ ){
-//            System.out.println("\nRound Number " + (index+1) + ": "+ playRound.wordsForRound);
         TestingPackage newPack = new TestingPackage();
         if(userChoice.equalsIgnoreCase(playRound.answer)){
             newPack.setComplete(true);
@@ -107,7 +100,6 @@ public class wordGame {
             newPack.setGameResponse(playRound.hint);
             return newPack;
             }
-//        }
         return newPack;
     }
 }
