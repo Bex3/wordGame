@@ -65,9 +65,9 @@ public class wordGame {
         if(userInput.equalsIgnoreCase("0")){
             break;
         }
-        if(playARound(totalRounds.get(index), userInput).isComplete()){
+        if(playARound(totalRounds.get(index), userInput).isComplete() == true){
             continue;
-        } else {
+        } else if (playARound(totalRounds.get(index), userInput).isComplete() == false) {
             System.out.println(playARound(totalRounds.get(index), userInput).gameResponse);
             index --;
         }
@@ -104,7 +104,7 @@ public class wordGame {
             newPack.setComplete(true);
             }  else if(!userChoice.equalsIgnoreCase(playRound.answer)){
             newPack.setComplete(false);
-            newPack.setGameResponse(totalRounds.get(0).hint);
+            newPack.setGameResponse(playRound.hint);
             return newPack;
             }
 //        }
