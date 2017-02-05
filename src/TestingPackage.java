@@ -3,7 +3,6 @@
  */
 public class TestingPackage {
     boolean complete;
-
     public boolean isComplete() {
         return complete;
     }

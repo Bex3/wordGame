@@ -11,9 +11,11 @@ public class wordGame {
     public static void main(String[] args) {
         wordGame theGame = new wordGame();
         theGame.gameFunction();
+        addRounds();
+//        theGame.playARound(totalRounds.get(0), "colors");
     }
 
-    public void addRounds(){
+    public static void addRounds(){
         totalRounds.add(0, new Round("Red", "Green", "Yellow", "You use these to paint or draw with","colors"));
         totalRounds.add(1,  new Round("Primes", "Evens", "Odds", "You count with these", "Numbers"));
         totalRounds.add(2, new Round("Spongebob", "Tom & Jerry", "Courage The Cowardly Dog","Saturday morning ________", "Cartoons"));
@@ -44,18 +46,35 @@ public class wordGame {
         Scanner inputScanner = new Scanner(System.in);
         addRounds();
 
-        for (int index = 0; index < 100; index ++){
-            System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
-            String userInput = inputScanner.nextLine();
-            if(userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
-                continue;
-            } else if(userInput.equalsIgnoreCase("0")){
-                break;
-            } else if(!userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
-                System.out.println(totalRounds.get(index).hint);
-                index--;
-            }
+//        for (int index = 0; index < totalRounds.size(); index ++){
+//            System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
+//            String userInput = inputScanner.nextLine();
+//            if(userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
+//                continue;
+//            } else if(userInput.equalsIgnoreCase("0")){
+//                break;
+//            } else if(!userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
+//                System.out.println(totalRounds.get(index).hint);
+//                index--;
+//            }
+//        }
+
+    for(int index = 0; index < totalRounds.size(); index++){
+        System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
+        String userInput = inputScanner.nextLine();
+        if(userInput.equalsIgnoreCase("0")){
+            break;
         }
+        if(playARound(totalRounds.get(index), userInput).isComplete()){
+            continue;
+        } else {
+            System.out.println(playARound(totalRounds.get(index), userInput).gameResponse);
+            index --;
+        }
+
+    }
+
+
     }
 
     public TestingPackage gameFunctionUserInputParameters(String userOption){
@@ -63,7 +82,7 @@ public class wordGame {
         System.out.println("If you get an answer wrong, a hint will be displayed on the screen and you will be returned to the level that was incomplete. Also, most answers are in plural form");
         System.out.println("If you would like to exit at any time press 0");
         TestingPackage newPack = new TestingPackage();
-        addRounds();
+
 
             System.out.println("\n" + ": "+ totalRounds.get(0).wordsForRound);
             if(userOption.equalsIgnoreCase(totalRounds.get(0).answer)){
@@ -75,6 +94,21 @@ public class wordGame {
                 newPack.setGameResponse(totalRounds.get(0).hint);
                 return newPack;
             } return newPack;
+    }
+
+    public TestingPackage playARound(Round playRound, String userChoice){
+//        for(int index = 0; index < 1; index ++ ){
+//            System.out.println("\nRound Number " + (index+1) + ": "+ playRound.wordsForRound);
+        TestingPackage newPack = new TestingPackage();
+        if(userChoice.equalsIgnoreCase(playRound.answer)){
+            newPack.setComplete(true);
+            }  else if(!userChoice.equalsIgnoreCase(playRound.answer)){
+            newPack.setComplete(false);
+            newPack.setGameResponse(totalRounds.get(0).hint);
+            return newPack;
+            }
+//        }
+        return newPack;
     }
 }
 
