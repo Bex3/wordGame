@@ -43,52 +43,21 @@ public class wordGame {
         Scanner inputScanner = new Scanner(System.in);
         addRounds();
 
-//        for (int index = 0; index < totalRounds.size(); index ++){
-//            System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
-//            String userInput = inputScanner.nextLine();
-//            if(userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
-//                continue;
-//            } else if(userInput.equalsIgnoreCase("0")){
-//                break;
-//            } else if(!userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
-//                System.out.println(totalRounds.get(index).hint);
-//                index--;
-//            }
-//        }
-
         for(int index = 0; index < totalRounds.size(); index++){
             System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
             String userInput = inputScanner.nextLine();
+            TestingPackage returnedPack = new TestingPackage();
             if(userInput.equalsIgnoreCase("0")){
                 break;
             }
-            if(playARound(totalRounds.get(index), userInput).isComplete() == true){
+            returnedPack = playARound(totalRounds.get(index), userInput);
+            if(returnedPack.isComplete() == true){
                 continue;
-            } else if (playARound(totalRounds.get(index), userInput).isComplete() == false) {
+            } else if (returnedPack.isComplete() == false) {
                 System.out.println(playARound(totalRounds.get(index), userInput).gameResponse);
                 index --;
             }
-
         }
-    }
-
-    public TestingPackage gameFunctionUserInputParameters(String userOption){
-        System.out.println("Welcome to the Guess the Common Denominator" + "\nFor example Water, Juice, and Coffee  \nThe answer would be drinks" + "\n* Don't add a space after your answer or it will be counted incorrect *");
-        System.out.println("If you get an answer wrong, a hint will be displayed on the screen and you will be returned to the level that was incomplete. Also, most answers are in plural form");
-        System.out.println("If you would like to exit at any time press 0");
-        TestingPackage newPack = new TestingPackage();
-
-
-            System.out.println("\n" + ": "+ totalRounds.get(0).wordsForRound);
-            if(userOption.equalsIgnoreCase(totalRounds.get(0).answer)){
-                newPack.setComplete(true);
-                return newPack;
-            }  else if(!userOption.equalsIgnoreCase(totalRounds.get(0).answer)){
-                System.out.println(totalRounds.get(0).hint);
-                newPack.setComplete(false);
-                newPack.setGameResponse(totalRounds.get(0).hint);
-                return newPack;
-            } return newPack;
     }
 
     public TestingPackage playARound(Round playRound, String userChoice){

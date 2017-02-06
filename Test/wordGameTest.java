@@ -22,23 +22,25 @@ public class wordGameTest {
 
     @Test
     public void correctAnswer() throws Exception {
-        TestingPackage thePack = new TestingPackage();
         wordGame newWordGame = new wordGame();
+        newWordGame.addRounds();
         String userOption = "colors";
-        assertTrue(newWordGame.gameFunctionUserInputParameters(userOption).complete);
+        assertTrue(newWordGame.playARound((newWordGame.totalRounds.get(0)) , userOption).complete);
     }
 
     @Test
     public void wrongAnswer() throws Exception{
         wordGame newWordGame = new wordGame();
+        newWordGame.addRounds();
         String userOption = "chance";
-        assertFalse(newWordGame.gameFunctionUserInputParameters(userOption).complete);
+        assertFalse(newWordGame.playARound((newWordGame.totalRounds.get(0)) ,userOption).complete);
     }
 
     @Test
     public void hint() throws Exception{
         wordGame newWordGame = new wordGame();
-        String userOption = "chance";
-        assertEquals("You use these to paint or draw with", newWordGame.gameFunctionUserInputParameters(userOption).gameResponse);
+        newWordGame.addRounds();
+        String userOption = "Falcons";
+        assertEquals("You use these to paint or draw with", newWordGame.playARound((newWordGame.totalRounds.get(0)) , userOption).gameResponse);
     }
 }
