@@ -74,7 +74,11 @@ public class wordGame {
 
         for (int index = 0; index < 100; index ++){
 //            System.out.println("\nRound Number " + (index+1) + ": "+ totalRounds.get(index).wordsForRound);
-            System.out.println("\nRound Number " + (index+1) + ":" + myLinkedListRounds.toString());
+            System.out.println("\nRound Number " + (index+1) + ":" + myLinkedListRounds);
+            for (Round : myLinkedListRounds.get(index)){
+
+            }
+
             String userInput = inputScanner.nextLine();
             if(userInput.equalsIgnoreCase(totalRounds.get(index).answer)){
                 continue;

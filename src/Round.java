@@ -10,11 +10,15 @@ public class Round {
     ArrayList<String> wordsForRound = new ArrayList<>();
 
 
-    public ArrayList toString(int index){
-    ArrayList returnWords = new String;
-    returnWords= wordsForRound.get(index);
-    return returnWords;
+    public ArrayList<String> getWordsForRound() {
+        return wordsForRound;
     }
+
+    public void setWordsForRound(ArrayList<String> wordsForRound) {
+        this.wordsForRound = wordsForRound;
+    }
+
+
 
     public Round() {
     }
