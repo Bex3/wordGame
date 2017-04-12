@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by bearden-tellez on 2/3/17.
@@ -7,6 +8,13 @@ public class Round {
     String answer;
     String hint;
     ArrayList<String> wordsForRound = new ArrayList<>();
+
+
+    public ArrayList toString(int index){
+    ArrayList returnWords = new String;
+    returnWords= wordsForRound.get(index);
+    return returnWords;
+    }
 
     public Round() {
     }
