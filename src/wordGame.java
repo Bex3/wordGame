@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /**
@@ -11,6 +12,32 @@ public class wordGame {
     public static void main(String[] args) {
         wordGame theGame = new wordGame();
         theGame.gameFunction();
+    }
+
+    public static void tryLinkedLists(){
+        LinkedList myLinkedListRounds = new LinkedList();
+        myLinkedListRounds.add(0, new Round("Red", "Green", "Yellow", "You use these to paint or draw with","colors"));
+        myLinkedListRounds.add(1,  new Round("Primes", "Evens", "Odds", "You count with these", "Numbers"));
+        myLinkedListRounds.add(2, new Round("Spongebob", "Tom & Jerry", "Courage The Cowardly Dog","Saturday morning ________", "Cartoons"));
+        myLinkedListRounds.add(3, new Round("Blanche", "Rose", "Dorothy", "Sophia", "A golden TV show", "Golden Girls"));
+        myLinkedListRounds.add(4, new Round("Hops", "Yeast", "Water", "Grain", "Relax with one of these","beer"));
+        myLinkedListRounds.add(5, new Round("Bronco", "Mustang", "Brumby", "Modes of transportation named after predecessors","Cars named for horses"));
+        myLinkedListRounds.add(6, new Round("Colorado", "Yellow", "Amazon", "Way down yonder on the Chattahoochee", "River"));
+        myLinkedListRounds.add(7, new Round("Flush", "Straight", "Full House", "Think Gambling & Vegas", "Poker Hands" ));
+        myLinkedListRounds.add(8, new Round("Java", "Ruby", "C", "This game is written in one of these","Programming languages"));
+        myLinkedListRounds.add(9, new Round("Remington", "Colt", "Winchester", "bang bang","gun brands"));
+        myLinkedListRounds.add(10, new Round("Chinook", "Azawakh", "Mudi", "Man's best friend","dog breeds"));
+        myLinkedListRounds.add(11, new Round("Larch", "Linden", "Orange", "You can climb these", "trees"));
+        myLinkedListRounds.add(12, new Round("Pacific", "Mountain", "Central", "Pay attention to your watch when you cross these", "time zones"));
+        myLinkedListRounds.add(13, new Round("Denmark", "Norway", "Sweden", "Historical and cultural region in Northern Europe...or think Vikings", "Scandinavian countries"));
+        myLinkedListRounds.add(14, new Round("Glossy", "Plain", "Heavy", "Write it down","paper types"));
+        myLinkedListRounds.add(15, new Round("Lur", "Crwth", "Cajon", "Play a cool tune","musical instruments"));
+        myLinkedListRounds.add(16, new Round("Hammer", "Anvil", "Stirrup", "Listen carefully", "ear bones"));
+        myLinkedListRounds.add(17, new Round("Cortadita", "Vienna", "Breve", "Fuel for programmers","coffee"));
+        myLinkedListRounds.add(18, new Round("Zinc", "Brass", "Copper", "Not iron or steel", "non-ferrous metals"));
+        myLinkedListRounds.add(19, new Round("Despina", "Galatea", "Larissa", "Neil Tyson Degrasse", "moons of Neptune"));
+
+
     }
 
     public void addRounds(){
