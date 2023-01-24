@@ -48,6 +48,7 @@ public class wordGame {
             String userInput = inputScanner.nextLine();
             TestingPackage returnedPack = new TestingPackage();
             if(userInput.equalsIgnoreCase("0")){
+                inputScanner.close();
                 break;
             }
             returnedPack = playARound(totalRounds.get(index), userInput);
